@@ -17,6 +17,7 @@
 */
 
 // reactstrap components
+import ReactDatetime from "react-datetime";
 import {
   Button,
   Card,
@@ -37,7 +38,7 @@ const Register = () => {
     <>
       <Col lg="6" md="8">
         <Card className="bg-secondary shadow border-0">
-          <CardHeader className="bg-transparent pb-5">
+         {/*  <CardHeader className="bg-transparent pb-5">
             <div className="text-muted text-center mt-2 mb-4">
               <small>Sign up with</small>
             </div>
@@ -77,10 +78,10 @@ const Register = () => {
                 <span className="btn-inner--text">Google</span>
               </Button>
             </div>
-          </CardHeader>
+          </CardHeader> */}
           <CardBody className="px-lg-5 py-lg-5">
             <div className="text-center text-muted mb-4">
-              <small>Or sign up with credentials</small>
+              <small>Registro</small>
             </div>
             <Form role="form">
               <FormGroup>
@@ -97,6 +98,72 @@ const Register = () => {
                 <InputGroup className="input-group-alternative mb-3">
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
+                      <i className="ni ni-hat-3" />
+                    </InputGroupText>
+                  </InputGroupAddon>
+                  <Input placeholder="Apellido" type="text" />
+                </InputGroup>
+              </FormGroup>
+              <FormGroup>
+                <InputGroup className="input-group-alternative mb-3">
+                  <InputGroupAddon addonType="prepend">
+                    <InputGroupText>
+                      <i className="ni ni-hat-3" />
+                    </InputGroupText>
+                  </InputGroupAddon>
+                  <select type="text" class="form-control">
+                    <option>Tipo de Identificacion</option>
+                    <option> Cedula Ciudadania</option>
+                    <option> Cedula Extranjera</option>
+                    <option> Pasaporte</option>
+                    <option> ...</option>
+                  </select>
+                </InputGroup>
+              </FormGroup>
+              <FormGroup>
+                <InputGroup className="input-group-alternative mb-3">
+                  <InputGroupAddon addonType="prepend">
+                    <InputGroupText>
+                      <i className="ni ni-hat-3" />
+                    </InputGroupText>
+                  </InputGroupAddon>
+                  <Input placeholder="Numero Identificacion" type="number" />
+                </InputGroup>
+              </FormGroup>
+              <FormGroup>
+              <InputGroup className="input-group-alternative">
+                <InputGroupAddon addonType="prepend">
+                  <InputGroupText>
+                    <i className="ni ni-calendar-grid-58" />
+                  </InputGroupText>
+                </InputGroupAddon>
+              <ReactDatetime
+                inputProps={{
+                placeholder: "Fecha de Nacimiento"
+                }}
+                timeFormat={false}
+                />
+                </InputGroup>
+              </FormGroup>
+              <FormGroup>
+              <InputGroup className="input-group-alternative">
+                <InputGroupAddon addonType="prepend">
+                  <InputGroupText>
+                    <i className="ni ni-calendar-grid-58" />
+                  </InputGroupText>
+                </InputGroupAddon>
+              <ReactDatetime
+                inputProps={{
+                placeholder: "Fecha Expedicion"
+                }}
+                timeFormat={false}
+                />
+                </InputGroup>
+              </FormGroup>
+              <FormGroup>
+                <InputGroup className="input-group-alternative mb-3">
+                  <InputGroupAddon addonType="prepend">
+                    <InputGroupText>
                       <i className="ni ni-email-83" />
                     </InputGroupText>
                   </InputGroupAddon>
@@ -104,6 +171,7 @@ const Register = () => {
                     placeholder="Email"
                     type="email"
                     autoComplete="new-email"
+                    required 
                   />
                 </InputGroup>
               </FormGroup>
@@ -118,6 +186,7 @@ const Register = () => {
                     placeholder="Password"
                     type="password"
                     autoComplete="new-password"
+                    required
                   />
                 </InputGroup>
               </FormGroup>

@@ -31,6 +31,7 @@ var routes = [
     component: Index,
     layout: "/admin",
   },
+ 
   {
     path: "/icons",
     name: "Icons",
@@ -73,5 +74,18 @@ var routes = [
     component: Register,
     layout: "/auth",
   },
+ /* {
+    path: "/SolicitarCredito",
+    name: "Solicita Tu Credito",
+    icon: "ni ni-tv-2 text-primary",
+    component: Cliente,
+    layout: "/cliente",
+  }, */
+
+
+
+
+
+
 ];
 export default routes;

@@ -25,8 +25,8 @@ import "assets/scss/argon-dashboard-react.scss";
 
 import AdminLayout from "layouts/Admin.js";
 import AuthLayout from "layouts/Auth.js";
-import ClienteLayout from "layouts/Cliente";
-import EmpleadoLayout from "layouts/Empleado";
+import ClienteLayout from "layouts/Cliente.js";
+import EmpleadoLayout from "layouts/Empleado.js";
 
 
 ReactDOM.render(
@@ -34,10 +34,10 @@ ReactDOM.render(
     <Switch>
       <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
       <Route path="/auth" render={(props) => <AuthLayout {...props} />} />
-      <Route path="/Cliente" render={(props) => <ClienteLayout {...props} />} />
-      <Route path="/Empleado" render={(props) => <EmpleadoLayout {...props} />} />
+      <Route path="/cliente" render={(props) => <ClienteLayout {...props} />} />
+      <Route path="/empleado" render={(props) => <EmpleadoLayout {...props} />} />
 
-      <Redirect from="/" to="/auth/register" />  {/* Pagina Auth es la pagina por defecto (hasta que inicie sesion)            */}
+      <Redirect from="/" to="/auth/index" />  {/* Pagina Auth es la pagina por defecto (hasta que inicie sesion)            */}
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

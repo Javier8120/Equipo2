@@ -33,12 +33,12 @@ const Footer = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Tim
+              Equipo 2
             </a>
           </div>
         </Col>
 
-        <Col xl="6">
+        {/* <Col xl="6">
           <Nav className="nav-footer justify-content-center justify-content-xl-end">
             <NavItem>
               <NavLink
@@ -78,10 +78,10 @@ const Footer = () => {
               >
                 MIT License
               </NavLink>
-            </NavItem>
+            </NavItem> 
           </Nav>
-        </Col>
-      </Row>
+        </Col>*/}
+      </Row> 
     </footer>
   );
 };

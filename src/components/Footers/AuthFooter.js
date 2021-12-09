@@ -31,10 +31,10 @@ const Login = () => {
                 © {new Date().getFullYear()}{" "}
                 <a
                   className="font-weight-bold ml-1"
-                  href="https://www.creative-tim.com?ref=adr-auth-footer"
+                  href="Javier"
                   target="_blank"
                 >
-                  Creative Tim
+                  Equipo 02
                 </a>
               </div>
             </Col>
@@ -42,34 +42,42 @@ const Login = () => {
               <Nav className="nav-footer justify-content-center justify-content-xl-end">
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com?ref=adr-auth-footer"
+                    href="Javier"
                     target="_blank"
                   >
-                    Creative Tim
+                    Javier
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com/presentation?ref=adr-auth-footer"
+                    href="Javier"
                     target="_blank"
                   >
-                    About Us
+                    Johan
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="http://blog.creative-tim.com?ref=adr-auth-footer"
+                    href="Javier"
                     target="_blank"
                   >
-                    Blog
+                    Andres
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md?ref=adr-auth-footer"
+                    href="Javier"
                     target="_blank"
                   >
-                    MIT License
+                    Harson
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    href="Javier"
+                    target="_blank"
+                  >
+                    Rafael
                   </NavLink>
                 </NavItem>
               </Nav>

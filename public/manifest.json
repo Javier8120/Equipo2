@@ -1,12 +1,13 @@
 {
-  "short_name": "Equipo2",
-  "name": "BANCO GNB Sudameris",
+  "short_name": "equipo2",
+  "name": "Banco sudameris",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
+    
   ],
   "start_url": "./index.html",
   "display": "standalone",

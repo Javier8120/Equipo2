@@ -70,8 +70,10 @@ const Sidebar = (props) => {
   };
   // creates the links that appear in the left menu / Sidebar
   const createLinks = (routes) => {
+    
     return routes.map((prop, key) => {
       return (
+        prop.invisible?
         <NavItem key={key}>
           <NavLink
             to={prop.layout + prop.path}
@@ -83,6 +85,7 @@ const Sidebar = (props) => {
             {prop.name}
           </NavLink>
         </NavItem>
+        :null
       );
     });
   };
@@ -241,34 +244,31 @@ const Sidebar = (props) => {
           <Nav className="mb-md-3" navbar>
             <NavItem>
               <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/#/documentation/overview?ref=adr-admin-sidebar">
-                <i className="ni ni-spaceship" />
-                Getting started
+                <i className="ni ni-palette" /> 
+                Iniciar App
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/#/documentation/colors?ref=adr-admin-sidebar">
-                <i className="ni ni-palette" />
-                Foundation
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/#/documentation/alerts?ref=adr-admin-sidebar">
-                <i className="ni ni-ui-04" />
-                Components
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <Nav className="mb-md-3" navbar>
-            <NavItem className="active-pro active">
-              <NavLink href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=adr-admin-sidebar">
-                <i className="ni ni-spaceship" />
-                Upgrade to PRO
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Container>
-    </Navbar>
+            </Nav>
+            <Nav className="mb-md-3" navbar>
+              <NavItem>
+                <NavLink href="https://github.com/Javier8120/Equipo2">
+                  <i className="ni ni-spaceship" />
+                  GitUp
+                </NavLink>
+              </NavItem>
+            </Nav>
+            <Nav className="mb-md-3" navbar>
+              <NavItem className="active-pro active">
+                <NavLink href="LInk Documento Google">
+                  <i className="ni ni-ui-04" />
+                  Sprints Document
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Container>
+      </Navbar>
+  
   );
 };
 

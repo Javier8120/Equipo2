@@ -15,13 +15,20 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import Index from "views/Index.js";
+
+
+/* import Tables from "views/examples/Tables.js";
+import Icons from "views/examples/Icons.js"; 
 import Profile from "views/examples/Profile.js";
 import Maps from "views/examples/Maps.js";
-import Register from "views/examples/Register.js";
-import Login from "views/examples/Login.js";
-import Tables from "views/examples/Tables.js";
-import Icons from "views/examples/Icons.js";
+*/
+
+import Index from "views/admin/Index";
+import Register from "views/auth/Register.js";
+import Login from "views/auth/Login.js";
+import ClientUsers from  "views/admin/ClientUsers"
+import EmpleadosUsers from "views/admin/EmpleadosUsers"
+import Profile from "views/admin/Profile.js"
 
 var routes = [
   {
@@ -30,9 +37,41 @@ var routes = [
     icon: "ni ni-tv-2 text-primary",
     component: Index,
     layout: "/admin",
+    invisible: true,
   },
- 
   {
+    path: "/profile",
+    name: "Perfil",
+    icon: "ni ni-circle-08 text-yellow",
+    component: Profile,
+    layout: "/admin",
+    invisible: true,
+  },
+
+  {
+    path: "/gestionar-clientes",
+    name: "Gestionar Clientes",
+    icon: "ni ni-folder-17 text-blue",
+    component: ClientUsers,
+    layout: "/admin",
+    invisible: true,
+  },
+  {
+    path: "/gestionar-empleados",
+    name: "Gestionar Empleados",
+    icon: "ni ni-folder-17 text-orange",
+    component: EmpleadosUsers,
+    layout: "/admin",
+    invisible: true,
+  },
+
+
+
+
+
+  
+ 
+  /* {
     path: "/icons",
     name: "Icons",
     icon: "ni ni-planet text-blue",
@@ -59,13 +98,14 @@ var routes = [
     icon: "ni ni-bullet-list-67 text-red",
     component: Tables,
     layout: "/admin",
-  },
+  }, */
   {
     path: "/login",
     name: "Login",
     icon: "ni ni-key-25 text-info",
     component: Login,
     layout: "/auth",
+    invisible: false,
   },
   {
     path: "/register",
@@ -73,37 +113,16 @@ var routes = [
     icon: "ni ni-circle-08 text-pink",
     component: Register,
     layout: "/auth",
-  },
- /* {
+    invisible: false,
+  }, 
+  /* {
     path: "/SolicitarCredito",
     name: "Solicita Tu Credito",
     icon: "ni ni-tv-2 text-primary",
     component: Cliente,
     layout: "/cliente",
-  }, */
+  },  */
 
-//// Empleado 
-/*
-
-
-
-
-
-
-*/
-
-
-/// Cliente
-
-/*
-
-
-
-
-
-
-
-*/
 
 
 
